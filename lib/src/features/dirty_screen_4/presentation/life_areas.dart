@@ -20,13 +20,13 @@ class LifeAreas extends StatelessWidget {
       ),
       margin: const EdgeInsets.all(4),
       padding: const EdgeInsets.all(16.0),
-      child: const Row(
+      child: Row(
         children: [
-          Icon(Icons.home, color: Colors.white),
-          SizedBox(width: 8),
+          const Icon(Icons.home, color: Colors.white),
+          const SizedBox(width: 8),
           Text(
-            'Home',
-            style: TextStyle(fontSize: 20, color: Colors.white),
+            areaName,
+            style: const TextStyle(fontSize: 20, color: Colors.white),
           ),
         ],
       ),
