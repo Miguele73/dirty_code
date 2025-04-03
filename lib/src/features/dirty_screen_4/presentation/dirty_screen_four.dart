@@ -9,32 +9,26 @@ class DirtyScreenFour extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Dirty Screen #4"),
       ),
-      body:const SingleChildScrollView(
+      body: const SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            LifeAreas(icons: Icon(Icons.home), areaName: 'Home', color: Colors.blueAccent),
-            LifeAreas(icons: Icon(Icons.work), areaName: 'Work', color: Colors.greenAccent),
-            LifeAreas(icons: Icon(Icons.school), areaName: 'School', color: Colors.orangeAccent),
-            LifeAreas(icons: Icon(Icons.directions_bike), areaName: 'Bike', color: Colors.purpleAccent),
-
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: Colors.purpleAccent,
-              ),
-              margin: const EdgeInsets.all(4),
-              padding: const EdgeInsets.all(16.0),
-              child: const Row(
-                children: [
-                  Icon(Icons.directions_bike, color: Colors.white),
-                  SizedBox(width: 8),
-                  Text(
-                    'Bike',
-                    style: TextStyle(fontSize: 20, color: Colors.white),
-                  ),
-                ],
-              ),
-            ),
+            LifeAreas(
+                icons: Icon(Icons.home),
+                areaName: 'Home',
+                color: Colors.blueAccent),
+            LifeAreas(
+                icons: Icon(Icons.work),
+                areaName: 'Work',
+                color: Colors.greenAccent),
+            LifeAreas(
+                icons: Icon(Icons.school),
+                areaName: 'School',
+                color: Colors.orangeAccent),
+            LifeAreas(
+                icons: Icon(Icons.directions_bike),
+                areaName: 'Bike',
+                color: Colors.purpleAccent),
           ],
         ),
       ),
